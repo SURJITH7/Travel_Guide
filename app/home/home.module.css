@@ -1,0 +1,152 @@
+/* .header { 
+    width: 100%; 
+    height: 80px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 60px; 
+    background-color: white; 
+    border-bottom: 1px solid #eeeeee; 
+}
+
+.logo{
+    cursor: pointer;    
+    font-size: 26px; 
+    font-weight: 700; 
+    color: #0f766e;
+}
+
+.btn{
+    padding: 11px 20px; 
+    border: none; 
+    border-radius: 7px; 
+    background-color: #0f766e; 
+    color: white; 
+    font-size: 15px; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #115e59;
+}
+
+.navv{
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    list-style: none;
+}
+
+.navv_li{
+    font-size: 16px; 
+    font-weight: 500; 
+    color: #333; 
+    cursor: pointer; 
+    transition: 0.3s;
+}
+
+.navv_li:hover{
+    color: #0f766e;
+} */
+
+.hero{
+    min-height: 35vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 60px 10px;
+}
+
+.hero_content{
+    max-width: 750px;
+}
+
+.hero_subtitle{
+    font-size: 14px; 
+    font-weight: bold;
+    letter-spacing: 4px; 
+    margin-bottom: 20px;
+}
+
+.head{
+    font-size: 64px; 
+    line-height: 1.1; 
+    margin-bottom: 25px;
+}
+
+.ad{
+    color: #168157;
+}
+
+.hero_description{
+    max-width: 600px; 
+    margin: 0 auto 35px; 
+    font-size: 18px; 
+    line-height: 1.7; 
+    color: #111112;
+}
+
+.hero_button{
+    display: inline-block; 
+    padding: 14px 28px; 
+    background: #168157; 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold;  
+    transition: 0.3s;
+}
+
+.hero_button:hover{
+    background: #10ab9e;
+    border-radius: 15px;
+    transform: translateY(-2px);
+}
+
+.destinations{
+    padding: 90px 8%;
+}
+
+.section_heading{
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.para{
+    margin-bottom: 10px;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hh{
+    margin-bottom: 15px;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.sp{
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.destination_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.destination_card{
+    overflow: hidden;   
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.destination_info{
+    padding: 22px;
+}
