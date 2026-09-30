@@ -166,15 +166,15 @@ body {
 }
 
 .india {
-  background: #fde68a;
+  background: grey;
 }
 
 .bali {
-  background: #a7f3d0;
+  background: grey;
 }
 
 .paris {
-  background: #ddd6fe;
+  background: grey;
 }
 
 
@@ -211,6 +211,23 @@ body {
 
 /* View All */
 
+.view-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #0f766e;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s;
+}
+
+.view-button:hover {
+  background: #115e59;
+  border-radius: 14px;
+  transform: translateY(-2px);
+}
+
 .view-all {
   margin-top: 40px;
   text-align: center;
@@ -218,7 +235,7 @@ body {
 
 .view-all a {
   color: #0f766e;
-
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -233,19 +250,26 @@ body {
 ========================= */
 
 .why-us {
-  background: #f8fafc;
+  background: #d2e0ef;
 }
 
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-
   text-align: center;
 }
 
 .feature {
   padding: 30px;
+  background-color: #bed3d2;
+  border-radius: 20px;
+}
+
+.feature:hover{
+  cursor: pointer;
+  transform: translateY(-8px);
+  transition: 0.2s;
 }
 
 .feature-icon {

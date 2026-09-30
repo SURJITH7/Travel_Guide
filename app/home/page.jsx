@@ -55,7 +55,7 @@ export default function Home() {
 
           <div className="destination-card">
             <div className="destination-image bali">
-              <span></span>
+              <img src="bali.jpg" alt="" width={230} height={230}/>
             </div>
 
             <div className="destination-info">
@@ -73,7 +73,7 @@ export default function Home() {
 
           <div className="destination-card">
             <div className="destination-image paris">
-              <span></span>
+              <img src="paris.jpg" alt="" width={210} height={230}/>
             </div>
 
             <div className="destination-info">
@@ -92,9 +92,61 @@ export default function Home() {
 
         <div className="view-all">
           <Link href="/destinations">
-            View All Destinations →
+            <button className="view-button">View All Destinations &rarr;</button>
           </Link>
         </div>
+      </section>
+
+      <section className="why-us">
+        <div className="section-heading">
+          <p>TRAVEL BETTER</p>
+
+          <h2>Everything You Need For Your Journey</h2>
+        </div>
+
+        <div className="features">
+          <div className="feature">
+            <div className="feature-icon">🌍</div>
+
+            <h3>Discover Places</h3>
+
+            <p>
+              Explore amazing destinations and discover places
+              worth visiting.
+            </p>
+          </div>
+
+          <div className="feature">
+            <div className="feature-icon">💡</div>
+
+            <h3>Travel Tips</h3>
+
+            <p>
+              Get useful information to help you plan a better trip.
+            </p>
+          </div>
+
+          <div className="feature">
+            <div className="feature-icon">❤️</div>
+
+            <h3>Create Memories</h3>
+
+            <p>
+              Find experiences that can turn your journey into
+              lasting memories.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="cta">
+        <h2>Ready to Explore?</h2>
+
+        <p>Start discovering your next destination today.</p>
+
+        <Link href="/destinations" className="cta-button">
+          Start Exploring
+        </Link>
       </section>
 
       
