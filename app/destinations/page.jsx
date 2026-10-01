@@ -4,19 +4,17 @@ import styles from "./page.module.css";
 const destinations = [
   {
     id: 1,
-    name: "Bali",
-    country: "Indonesia",
-    description:
-      "Beautiful beaches, temples, tropical forests and amazing sunsets.",
-    emoji: "🌴",
+    name: "Manali",
+    country: "India",
+    description: "Scenic beauty, snow-capped mountains, and adventure activities.",
+    emoji: "🏔️",
   },
   {
     id: 2,
-    name: "Paris",
-    country: "France",
-    description:
-      "Explore beautiful architecture, art, food and the famous Eiffel Tower.",
-    emoji: "🗼",
+    name: "Rome",
+    country: "Italy",
+    description:"Explore beautiful architecture, art, food and the famous Colosseum.",
+    emoji: "🏛️",
   },
   {
     id: 3,
