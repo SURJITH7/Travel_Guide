@@ -30,16 +30,7 @@ const featured = [
 export default function Page() {
   return (
     <div className={styles.page}>
-      <header className={styles.nav}>
-        <Link href="/" className={styles.logo}>
-          Travel Guide
-        </Link>
-        <nav className={styles.links}>
-          <Link href="/home">Home</Link>
-          <Link href="/destinations">Destinations</Link>
-          <Link href="/about">About</Link>
-        </nav>
-      </header>
+      
 
       <section className={styles.hero}>
         <Image src="/travel.jpg" alt="landscapes" fill  className={styles.heroImage}/>

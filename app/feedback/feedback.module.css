@@ -1,0 +1,92 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* Page title */
+.title {
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cardHeader {
+  padding: 15px 20px;
+}
+
+.cardBody {
+  padding: 25px;
+}
+
+/* Form */
+.formLabel {
+  font-weight: 600;
+  color: #333;
+}
+
+.input {
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.15);
+}
+
+/* Buttons */
+.button {
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 500;
+}
+
+/* Feedback table */
+.table {
+  vertical-align: middle;
+}
+
+.table th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 12px;
+}
+
+/* Message */
+.message {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .cardBody {
+    padding: 15px;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .message {
+    max-width: 180px;
+  }
+}

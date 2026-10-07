@@ -53,6 +53,7 @@ const destinations = [
 export default function Destinations() {
   return (
     <main className={styles.container}>
+
       {/* Page Header */}
 
       <section className={styles.heading}>

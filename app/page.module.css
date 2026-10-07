@@ -10,42 +10,7 @@
 }
 
 /* Navigation sits on top of the hero */
-.nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem clamp(1rem, 5vw, 4rem);
-  color: #000000;
-}
 
-.logo {
-  font-size: 1.4rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: inherit;
-}
-
-.links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.links a {
-  color: rgb(8, 8, 8);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.links a:hover,
-.links a:focus-visible {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
 
 /* Hero */
 .hero {
