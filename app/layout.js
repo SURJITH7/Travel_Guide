@@ -20,9 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+      <body>
 
-      <header className="nav">
+        {children}
+
+        <section className="nav">
         <Link href="/" className="logo">
           Travel Guide
         </Link>
@@ -30,8 +32,13 @@ export default function RootLayout({ children }) {
           <Link href="/home" className="a">Home</Link>
           <Link href="/destinations" className="a">Destinations</Link>
           <Link href="/about" className="a">About</Link>
+          <Link href="/feedback" className="a">Feedback</Link>
         </nav>
-      </header>
+      </section>
+
+      </body>
+
+      
 
     </html>
   );
