@@ -15,23 +15,47 @@ export async function POST(request) {
         { status: 404 }
       );
     }
-    const isPasswordValid = await bcrypt.compare(password, user.password);
+    const isPasswordValid = await bcrypt.compare(
+      password,
+      user.password
+    );
     if (!isPasswordValid) {
       return NextResponse.json(
         { message: "Invalid password" },
         { status: 401 }
       );
     }
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {expiresIn: "1h",});
-    return NextResponse.json(
-      { message: "Login successful", token },
+    const token = jwt.sign(
+      { userId: user._id },
+      process.env.JWT_SECRET,
+      {
+        expiresIn: "1d",
+      }
+    );
+    const response = NextResponse.json(
+      {
+        message: "Login successful",
+        user: {
+          id: user._id,
+          email: user.email,
+        },
+      },
       { status: 200 }
     );
-  } 
-  catch (error) {
+    response.cookies.set("token", token, {
+      httpOnly: true,
+      path: "/",
+      maxAge: 60 * 60 * 24,
+      sameSite: "lax",
+    });
+    return response;
+  } catch (error) {
     console.error("Login Error:", error);
     return NextResponse.json(
-      { message: "Internal Server Error", error: error.message },
+      {
+        message: "Internal Server Error",
+        error: error.message,
+      },
       { status: 500 }
     );
   }
